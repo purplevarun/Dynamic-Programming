@@ -24,8 +24,16 @@ def Knapsack (Weight:list,Value:list,N:int,Capacity:int) -> int :
     if N == 0 or Capacity == 0:
         return 0
     
-    Element = Value[N-1]
-    choice1 = Element + Knapsack(Weight,Value,N-1,Capacity)
-    choice2 = Knapsack(Weight,Value,N-1,Capacity-Element)
+    choice1 = Value[N-1] + Knapsack(Weight,Value,N-1,Capacity-Weight[N-1])
+    choice2 = Knapsack(Weight,Value,N-1,Capacity)
 
-    if 
+    if Weight[N-1] <= Capacity:
+        return max (choice1,choice2)
+    else :
+        return choice2
+
+Weight = [10,20,30]
+Value = [60,100,120]
+Capacity = 50
+N = 3
+print (Knapsack(Weight,Value,N,Capacity))
