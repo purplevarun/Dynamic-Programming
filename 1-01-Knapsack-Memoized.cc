@@ -25,9 +25,21 @@ Base Condition : Think of smallest valid input */
 #include <bits/stdc++.h>
 using namespace std;
 #define int int64_t
-unordered_map 
-int KnapSack (int W, int wt*, int val*, int N){
-    
+unordered_map <string,int> dp;
+int KnapSack (int W, int *wt, int *val, int N){
+    string key = to_string(W)+","+to_string(N);
+    if (dp.find(key)!=dp.end())
+        return dp[key];
+    if (W == 0 || N == 0)
+        return 0;
+    if (wt[N-1] <= W){
+        return dp[key] = max (
+            val[N-1] + KnapSack(W-wt[N-1],wt,val,N-1),
+            KnapSack(W,wt,val,N-1)
+        );
+    }
+    else
+        return KnapSack (W,wt,val,N-1);
 }
 int32_t main () {
     int W = 50;
