@@ -25,13 +25,13 @@ def Knapsack (wt,val,N,W):
     if N == 0 or W == 0:
         return 0
     
-    selected = val[N-1] + Knapsack(wt,val,N-1,W-wt[N-1])
-    notselected = Knapsack(wt,val,N-1,W)
-
     if wt[N-1] <= W:
-        return max (selected,notselected)
+        return max (
+            val[N-1] + Knapsack(wt,val,N-1,W-wt[N-1]),
+            Knapsack(wt,val,N-1,W)
+        )
     else :
-        return notselected
+        return Knapsack(wt,val,N-1,W)
 
 wt = [10,20,30]
 val = [60,100,120]
