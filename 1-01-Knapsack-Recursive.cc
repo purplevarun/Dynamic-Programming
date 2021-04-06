@@ -22,3 +22,14 @@ Therefore, it is DP.
 
 Base Condition : Think of smallest valid input */
 
+#include <bits/stdc++.h>
+using namespace std;
+#define int int64_t
+
+int32_t main () {
+    int W = 50;
+    int wt[] = {10,20,30};
+    int val[] = {60,100,120};
+    int N = 3;
+    cout << KnapSack(W,wt,val,N) << endl;
+}
