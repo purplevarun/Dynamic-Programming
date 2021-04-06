@@ -25,7 +25,10 @@ Base Condition : Think of smallest valid input */
 #include <bits/stdc++.h>
 using namespace std;
 #define int int64_t
-
+unordered_map 
+int KnapSack (int W, int wt*, int val*, int N){
+    
+}
 int32_t main () {
     int W = 50;
     int wt[] = {10,20,30};
