@@ -26,7 +26,9 @@ using namespace std;
 
  Base Condition : Think of smallest valid input
 */
-
+int knapsack (int Weights[], int Values[], int N, int Capacity){
+    
+}
 int32_t main () {
 
 }
