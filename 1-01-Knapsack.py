@@ -23,6 +23,7 @@
 # Base Condition : Think of smallest valid input
 def Knapsack (Weights,Values,Capacity):
     N = len (Weights)
+    # base condition
     if N == 0 or Capacity == 0:
         return 0
     
