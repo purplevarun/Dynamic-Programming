@@ -1,5 +1,5 @@
-#     Given : Weight [], Value [] and Max Capacity
-#     Output : Maximum Value
+#     Given : wt [], val [] and Max W
+#     Output : Maximum val
 
 #     Checking for DP:
 #     1. It has a choice (either choose item or don't)
@@ -9,7 +9,7 @@
  
 #           APPROACH :
 
-#     W = Weight of Item, C = Max Capacity
+#     W = wt of Item, C = Max W
 
 #             Item
 #             /  \
@@ -20,20 +20,21 @@
 #        1     0   0 
 
 #  Base Condition : Think of smallest valid input
-def Knapsack (Weight:list,Value:list,N:int,Capacity:int) -> int :
-    if N == 0 or Capacity == 0:
+
+def Knapsack (wt,val,N,W):
+    if N == 0 or W == 0:
         return 0
     
-    choice1 = Value[N-1] + Knapsack(Weight,Value,N-1,Capacity-Weight[N-1])
-    choice2 = Knapsack(Weight,Value,N-1,Capacity)
+    selected = val[N-1] + Knapsack(wt,val,N-1,W-wt[N-1])
+    notselected = Knapsack(wt,val,N-1,W)
 
-    if Weight[N-1] <= Capacity:
-        return max (choice1,choice2)
+    if wt[N-1] <= W:
+        return max (selected,notselected)
     else :
-        return choice2
+        return notselected
 
-Weight = [10,20,30]
-Value = [60,100,120]
-Capacity = 50
+wt = [10,20,30]
+val = [60,100,120]
+W = 50
 N = 3
-print (Knapsack(Weight,Value,N,Capacity))
+print (Knapsack(wt,val,N,W))
