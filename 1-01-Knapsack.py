@@ -8,7 +8,6 @@
 
 #     Therefore, it is DP.
 # 
-# 
 #          APPROACH :
 
 #    W = Weight of Item, C = Max Capacity
