@@ -42,4 +42,3 @@ val = [60,100,120]
 W = 50
 N = 3
 print (Knapsack(wt,val,N,W))
-print (dp)
