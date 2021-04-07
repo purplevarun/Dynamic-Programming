@@ -1,3 +1,5 @@
+// https://www.hackerrank.com/contests/srin-aadc03/challenges/classic-01-knapsack/problem
+// All TC accepted
 #include <bits/stdc++.h>
 using namespace std;
 #define int int64_t
