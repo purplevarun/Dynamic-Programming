@@ -2,6 +2,7 @@
 using namespace std;
 #define int int64_t
 int W,N;
+// unordered_map <string,int> dp;
 int knap (int W,int *wt, int *val, int N){
     int dp[N+1][W+1];
     // base cases
@@ -33,10 +34,7 @@ void solve () {
     cout << knap (W,wt,val,N) << endl;
 }
 int32_t main() {
-    // clock_t start = clock();
     int T; cin >> T;
     while (T--) solve ();
-    // clock_t end = clock();
-    // cerr << "TIME = " << fixed<<setprecision(5)<<double(end-start)/double(CLOCKS_PER_SEC);
     return 0;
 }
