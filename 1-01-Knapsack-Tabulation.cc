@@ -13,7 +13,7 @@ int KnapSack (int W, int *wt, int *val, int N){
         dp[0][j] = 0;
     }
     for (int i=1;i<N+1;i++){
-        for (int j=1;j<W+1;j++){
+        for (int j=1;j<W+1;j++){}
             if (wt[i-1]<=j){
                 dp[i][j] = max (
                     val[i-1] + dp[i-1][j-wt[i-1]],
