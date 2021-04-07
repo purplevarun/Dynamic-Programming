@@ -7,3 +7,7 @@
 # 1. Recursive fn
 # 2. Memoization
 # 3. Top Down Approach
+
+# ------------------------------------
+
+# Tabulation Initialization = Base Case in Memoization
