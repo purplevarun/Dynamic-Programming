@@ -34,6 +34,7 @@ void solve () {
     cout << knap (W,wt,val,N) << endl;
 }
 int32_t main() {
+    z
     int T; cin >> T;
     while (T--) solve ();
     return 0;
