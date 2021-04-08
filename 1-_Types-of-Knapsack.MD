@@ -5,7 +5,7 @@
 ## break element and fill the bag
 # 3. unbounded knapsack
 ## one element can be chosen multiple times
-## ---------------------------------------------
+---
 # Recognize KnapSack
 ## Some elements are given and a bag/box is given
 ## We need to make choice for every element, whether to choose it or not
