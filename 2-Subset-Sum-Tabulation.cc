@@ -1,10 +1,12 @@
 #include <bits/stdc++.h>
 using namespace std;
 #define int int64_t
-#define size (int)1e4+7
-int dp[size][size];
 bool canSum (int *A, int N, int Sum){
-    
+    int dp[N+1][Sum+1];
+    // base cases
+    // when sum is 0
+    for ()
+    // when array size is 0
 }
 int32_t main () {
     int A[] = {7,14};
