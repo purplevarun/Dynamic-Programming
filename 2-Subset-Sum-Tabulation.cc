@@ -1,7 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 #define int int64_t
-
+#define size (int)1e4+7
+int dp[size][size];
 bool canSum (int *A, int N, int Sum){
     
 }
