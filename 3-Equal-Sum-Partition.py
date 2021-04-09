@@ -1,4 +1,6 @@
-bool subsetSum (A,)
+bool subsetSum (A,Sum):
+    N = len (A)
+    
 bool EqualSumPartition (A):
     if sum(A)%2!=0:
         return False
