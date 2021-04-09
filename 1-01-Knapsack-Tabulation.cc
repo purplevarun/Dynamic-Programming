@@ -27,7 +27,6 @@ int KnapSack (int W, int *wt, int *val, int N){
     }
     return dp[N][W];
 }
-
 int32_t main () {
     int W = 50;
     int wt[] = {10,20,30};
