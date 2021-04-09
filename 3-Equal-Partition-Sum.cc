@@ -33,10 +33,10 @@ bool EqualPartition (int *A, int N) {
     int sum = accumulate(A,A+N,0);
     if (sum%2!=0)
         return false;
-    return subsetSum (A,N,sum);
+    return subsetSum (A,N,sum/2);
 }
 int32_t main () {
-    int A[] = {3,5,11,5};
+    int A[] = {1,5,11,5};
     int N = 4;
     cout << EqualPartition(A,N) << endl;
 }
