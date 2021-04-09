@@ -30,8 +30,8 @@ bool canSum (int *A, int N, int Sum){
     return dp[N][Sum];
 }
 int32_t main () {
-    int A[] = {2};
+    int A[] = {7,14};
     int N = sizeof(A)/sizeof(A[0]);
-    int Sum = 30000;
+    int Sum = 300;
     cout << canSum (A, N, Sum) << endl;
 }
