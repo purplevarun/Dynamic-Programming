@@ -16,7 +16,7 @@ vector<int> SubsetSum (int *A, int N, int Sum){
 		for (int j=1;j<Sum+1;j++){
 			if (A[i-1]<=j)
 				dp[i][j] = dp[i-1][j] || dp[i-1][j-A[i-1]];
-			else	
+			else	\
 				dp[i][j] = dp[i-1][j];
 		}
 	}
