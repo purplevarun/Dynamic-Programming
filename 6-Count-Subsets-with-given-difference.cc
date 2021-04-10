@@ -38,7 +38,9 @@ int countSubsets (int *A, int N, int Sum) {
     Also , sum(S2) = (sum(A) - D)/2
 */
 int countSubsetsDifference (int *A, int N, int D){
-    
+    int sum = accumulate(A,A+N,0);
+    int reqd_subset_sum = (sum + D)/2;
+    return countSubsets(A, N, reqd_subset_sum);
 }
 int32_t main () {
     int A[] = {1,1,2,3};
