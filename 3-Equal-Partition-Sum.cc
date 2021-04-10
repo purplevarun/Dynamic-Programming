@@ -1,3 +1,4 @@
+// https://practice.geeksforgeeks.org/problems/subset-sum-problem2014/1
 #include <bits/stdc++.h>
 using namespace std;
 #define vi vector <int>
