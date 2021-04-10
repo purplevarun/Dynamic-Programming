@@ -27,6 +27,14 @@ vector<int> SubsetSum (int *A, int N, int Sum){
 	}
 	return ans;
 }
+/*
+	Minimize sum(subset1) - sum(subset2)
+	we know : sum(subset1) + sum(subset2) = sum(array)
+	therefore, sum(S2) = sum(A) - sum(S1)
+	therefore, minimize:
+		= sum(S1) - (sum(A) - sum(S1))
+		= sum(A) - 2sum(S1)
+*/
 int MinSubsetDiff (int *A, int N){
 	int Sum = accumulate(A,A+N,0);
 	vector <int> idx = SubsetSum(A,N,Sum);
