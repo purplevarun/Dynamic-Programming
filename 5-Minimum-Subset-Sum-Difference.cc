@@ -27,7 +27,8 @@ vector<bool> SubsetSum (int *A, int N, int Sum){
 	return ans;
 }
 int MinSubsetDiff (int *A, int N){
-	vector <bool> ans = SubsetSum(A,N,accumulate(A,A+N,0));
+	int Sum = accumulate(A,A+N,0);
+	vector <bool> ans = SubsetSum(A,N,Sum);
 	vector<int> idx;
 	for (int i=0;i<ans.size();i++) 
 		if (ans[i]) idx.push_back(i);
