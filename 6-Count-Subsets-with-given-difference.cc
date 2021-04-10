@@ -2,6 +2,9 @@
 using namespace std;
 #define vi vector <int>
 #define int int64_t
+int countSubsets (int *A, int N, int Sum) {
+    int dp[N+1][Sum+1];
+}
 /*
     S1 = subset 1
     S2 = subset 2
