@@ -9,7 +9,7 @@ using namespace std;
     given :  1) sum(S1) - sum(S2) = D
     we know, 2) sum(S1) + sum(S2) = sum(A)
     therefore, 2sum(S1) = D + sum(A)
-              = sum(S1) = (D + sum(A))/2
+              = sum(S1) = (D + sum(A)) / 2
 */
 int countSubsetsDifference (int *A, int N, int D){
 
