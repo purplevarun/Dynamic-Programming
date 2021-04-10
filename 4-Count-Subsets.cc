@@ -9,4 +9,5 @@ int32_t main () {
     int N = 6;
     int Sum = 10;
     cout << countSubsets(A,N,Sum) << endl;
+    a
 }
