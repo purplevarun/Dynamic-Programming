@@ -10,6 +10,8 @@ using namespace std;
     we know, 2) sum(S1) + sum(S2) = sum(A)
     therefore, 2sum(S1) = D + sum(A)
               = sum(S1) = (D + sum(A)) / 2
+
+    Also , sum(S2) = (sum(A) - D)/2
 */
 int countSubsetsDifference (int *A, int N, int D){
 
