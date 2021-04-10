@@ -18,11 +18,15 @@ int countSubsets (int *A, int N, int Sum ){
     // table 
     for (int i=1;i<N+1;i++){
         for (int j=1;j<Sum+1;j++){
-            int include = dp[i-1][j-dp[i-1]];
+            int include = dp[i-1][j-A[i-1]];
             int exclude = dp[i-1][j];
-            
+            if (A[i-1] <= j)
+                dp[i][j] = include + exclude;
+            else 
+                dp[i][j] = exclude;
         }
     }
+    return dp[N][Sum];
 }
 int32_t main () {
     int A[] = {2,3,5,6,8,10};
