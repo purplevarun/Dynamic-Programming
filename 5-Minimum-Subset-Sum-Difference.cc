@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 int MinSubsetDiff (int *A, int N){
-	return 10;
+	return 100;
 }
 int main () {
 	int A[] = {1,5,11,5};
