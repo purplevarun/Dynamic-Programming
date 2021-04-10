@@ -3,7 +3,20 @@ using namespace std;
 #define vi vector <int>
 #define int int64_t
 int countSubsets (int *A, int N, int Sum) {
+    // create dp
     int dp[N+1][Sum+1];
+    // fill baseCase
+    for (int i=0;i<N+1;i++){
+        for (int j=0;j<Sum+1;j++){
+            if (i==0)
+                dp[i][j] = 0;
+            if (j==0)
+                dp[i][j] = 1;
+        }
+    }
+    dp[0][0] = 1;
+    // fill dp
+    
 }
 /*
     S1 = subset 1
