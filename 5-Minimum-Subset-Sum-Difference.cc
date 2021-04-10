@@ -32,8 +32,11 @@ int MinSubsetDiff (int *A, int N){
 	vector<int> idx;
 	for (int i=0;i<ans.size();i++) 
 		if (ans[i]) idx.push_back(i);
-	
-	return 1;
+	int Min = 1e9;
+	for (int i:idx){
+		Min = min (Min,Sum-2*i);
+	}
+	return Min;
 }
 int main () {
 	int A[] = {1,2,7};
