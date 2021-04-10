@@ -1,7 +1,7 @@
 // https://practice.geeksforgeeks.org/problems/minimum-sum-partition3317/1 
 #include <bits/stdc++.h>
 using namespace std;
-vector<bool> SubsetSum (int *A, int N, int Sum){
+vector<int> SubsetSum (int *A, int N, int Sum){
 	bool dp[N+1][Sum+1];
 	for (int i=0;i<N+1;i++){
 		for (int j=0;j<Sum+1;j++){
@@ -20,26 +20,24 @@ vector<bool> SubsetSum (int *A, int N, int Sum){
 				dp[i][j] = dp[i-1][j];
 		}
 	}
-	vector<bool> ans;
-	for (int i=0;i<(Sum+1)/2;i++){
-		ans.push_back(dp[N][i]);
+	vector<int> ans;
+	for (int i=0;i<=Sum/2;i++){
+		if (dp[N][i]==true)
+			ans.push_back(i);
 	}
 	return ans;
 }
 int MinSubsetDiff (int *A, int N){
 	int Sum = accumulate(A,A+N,0);
-	vector <bool> ans = SubsetSum(A,N,Sum);
-	vector<int> idx;
-	for (int i=0;i<ans.size();i++) 
-		if (ans[i]) idx.push_back(i);
+	vector <int> idx = SubsetSum(A,N,Sum);
 	int Min = 1e9;
-	for (int i:idx){
-		Min = min (Min,Sum-2*i);
+	for (int i=0;i<idx.size();i++){
+		Min = min (Min,Sum-2*idx[i]);
 	}
 	return Min;
 }
 int main () {
-	int A[] = {1,2,7};
-	int N = 3;
+	int A[] = {5,6,6,5,7,4,7,6};
+	int N = 8;
 	cout << MinSubsetDiff (A,N) << endl;
 }
