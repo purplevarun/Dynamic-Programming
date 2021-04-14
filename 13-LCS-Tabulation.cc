@@ -12,7 +12,11 @@ int LCS (string X, string Y, int N, int M) {
                 dp[i][j] = 0;
         }
     }
-    
+    for (int i=1;i<N+1;i++){
+        for (int j=1;j<Sum+1;j++){
+            
+        }
+    }
 }
 int32_t main () {
     string X = "ABCDGH";
