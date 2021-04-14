@@ -5,9 +5,9 @@ vector<int> SubsetSum (int *A, int N, int Sum){
 	bool dp[N+1][Sum+1];
 	for (int i=0;i<N+1;i++){
 		for (int j=0;j<Sum+1;j++){
-			if (i == 0)
+			if (i == 0) // N = 0, Array cannot sum up to Sum
 				dp[i][j] = false;
-			if (j == 0)
+			if (j == 0) // Sum = 0, Array can sum upto Sum (using 0 elements)
 				dp[i][j] = true;
 		}
 	}	
@@ -16,7 +16,7 @@ vector<int> SubsetSum (int *A, int N, int Sum){
 		for (int j=1;j<Sum+1;j++){
 			if (A[i-1]<=j)
 				dp[i][j] = dp[i-1][j] || dp[i-1][j-A[i-1]];
-			else	\
+			else	
 				dp[i][j] = dp[i-1][j];
 		}
 	}
@@ -45,7 +45,12 @@ int MinSubsetDiff (int *A, int N){
 	return Min;
 }
 int main () {
-	int A[] = {5,6,6,5,7,4,7,6};
+	// int A[] = {5,6,6,5,7,4,7,6};
+	// int N = 8;
+	int A[] = {87,100,28,67,68,41,67,1};
 	int N = 8;
-	cout << MinSubsetDiff (A,N) << endl;
+	// cout << MinSubsetDiff (A,N) << endl;
+	int diff = MinSubsetDiff(A,N);
+	int sum = accumulate(A,A+N,0);
+	cout << sum/2 + diff << ", " << sum - sum/2 - diff << endl;
 }
