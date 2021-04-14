@@ -11,11 +11,14 @@ int minCoins(int *Coins, int N, int Sum){
             if (j==0) // reqd sum is 0
                 dp[i][j] = 0; // 0 coins reqd to get 0
             if (i==1){
-                
+                if (j%Coins[i-1]==0)
+                    dp[i][j] = j/Coins[i-1];
+                else
+                    dp[i][j] = 1e9;
             }
         }
     }    
-
+    
 }
 int32_t main () {  
     int coins[] = {1,2,3};
