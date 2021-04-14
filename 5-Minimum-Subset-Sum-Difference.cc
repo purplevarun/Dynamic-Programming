@@ -5,12 +5,13 @@ vector<int> SubsetSum (int *A, int N, int Sum){
 	bool dp[N+1][Sum+1];
 	for (int i=0;i<N+1;i++){
 		for (int j=0;j<Sum+1;j++){
-			if (i == 0) // N = 0, Array cannot sum up to Sum
+			if (i == 0) // N = 0, Array cannot sum up to Sum(there are no elements)
 				dp[i][j] = false;
-			if (j == 0) // Sum = 0, Array can sum upto Sum (using 0 elements)
+			if (j == 0) // Sum = 0, Array can sum upto 0(using 0 elements)
 				dp[i][j] = true;
 		}
 	}	
+	// if Sum = 0 and N = 0
 	dp[0][0] = true;
 	for (int i=1;i<N+1;i++) {
 		for (int j=1;j<Sum+1;j++){
