@@ -14,7 +14,7 @@ int lCs (string X, string Y, int N, int M) {
     }
     for (int i=1;i<N+1;i++){
         for (int j=1;j<M+1;j++){
-            if (X[i-1] == Y[i-1]){
+            if (X[i-1] == Y[j-1]){
                 dp[i][j] = dp[i-1][j-1] + 1;
                 Max = max (Max,dp[i][j]);
             }
@@ -26,6 +26,6 @@ int lCs (string X, string Y, int N, int M) {
 }
 int32_t main () {
     string X = "ABCDGH";
-    string Y = "ABCDGHR";
+    string Y = "AECDGHR";
     cout << lCs(X,Y,X.length(),Y.length()) << endl;
 }
