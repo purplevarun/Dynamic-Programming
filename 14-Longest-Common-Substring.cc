@@ -3,7 +3,7 @@ using namespace std;
 #define vi vector <int>
 #define int int64_t
 int lCs (string X, string Y, int N, int M) {
-    int Max = -1e9;
+    int Max = 0;
     int dp [N+1][M+1];
     // initialization
     for (int i=0;i<N+1;i++){
