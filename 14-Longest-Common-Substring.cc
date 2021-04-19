@@ -25,8 +25,7 @@ int lCs (string X, string Y, int N, int M) {
     return Max;
 }
 int32_t main () {
-    //string X = "ABCDGH";
-    //string Y = "AECDGHR";
-    //cout << lCs(X,Y,X.length(),Y.length()) << endl;
-    cout << "hello world" << endl;
+    string X = "ABCDGH";
+    string Y = "AECDGHR";
+    cout << lCs(X,Y,X.length(),Y.length()) << endl;
 }
