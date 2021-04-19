@@ -5,7 +5,7 @@ using namespace std;
 #define int int64_t
 int countSubsets (int *A, int N, int Sum ){
     int dp [N+1][Sum+1];
-    // base case / Initialization
+    // base case // Initialization
     for (int i=0;i<N+1;i++){
         for (int j=0;j<Sum+1;j++){
             if (j==0)
