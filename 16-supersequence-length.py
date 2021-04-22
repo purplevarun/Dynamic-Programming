@@ -9,7 +9,8 @@ def LCS (A,B):
                 dp[i][j] = max (dp[i-1][j], dp[i][j-1])
     i = N; j = M
     while i>=0 and j>=0:
-        
+        if A[i-1]==B[j-1]:
+            
 def supersequence_length(A,B):
     N = len(A); M = len(B)
 A = "AGGTAB"
