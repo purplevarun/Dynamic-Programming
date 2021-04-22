@@ -36,6 +36,8 @@ vector<int> printLCS (vector<int> A, vector<int> B){
         }
     }
     reverse (answer.begin(),answer.end());
+    if (answer[0]==0)
+        answer.erase(answer.begin());
     return answer;
 }
 int main () {
