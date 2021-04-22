@@ -23,7 +23,14 @@ vector<int> printLCS (vector<int> A, vector<int> B){
     }
     int i = N, j = M;
     while (i>=0 && j>=0){
-        
+        if (A[i-1]==B[j-1])  {
+            answer.push_back(A[i-1]);
+            i--;
+            j--;
+        }
+        else {
+            
+        }
     }
 }
 int main () {
