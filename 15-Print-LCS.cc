@@ -29,9 +29,14 @@ vector<int> printLCS (vector<int> A, vector<int> B){
             j--;
         }
         else {
-            
+            if (dp[i][j-1]>dp[i-1][j])
+              j--;
+            else
+              i--;  
         }
     }
+    reverse (answer.begin(),answer.end());
+    return answer;
 }
 int main () {
     vector <int> A = {1,2,3,4,1};
