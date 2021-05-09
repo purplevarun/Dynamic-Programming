@@ -1,17 +1,2 @@
-Help on module __main__:
-
-NAME
-    __main__ - # https://practice.geeksforgeeks.org/problems/minimum-deletitions1648/1
-
-FUNCTIONS
-    LCS(S)
-        # https://practice.geeksforgeeks.org/problems/minimum-deletitions1648/1
-
-DATA
-    __annotations__ = {}
-
-FILE
-    c:\users\varun\desktop\dynamic-programming\aditya-verma-youtube\19-minimum-deletions.py
-
-
-None
+2
+ehlo
