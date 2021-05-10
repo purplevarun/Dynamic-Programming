@@ -16,5 +16,5 @@ def LCS (A,B):
 def LPS (S):
 	return LCS(S,S[::-1])
 if __name__ == '__main__':
-	S = "AEBCBDA"
+	S = "BBBAB"
 	print (len(S) - LPS(S))
