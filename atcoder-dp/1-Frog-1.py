@@ -12,7 +12,6 @@ dp[0] = 0
 dp[1] = abs (A[1] - A[0])
 
 for i in range (2,N):
-	print (dp)
 	dp[i] = min (
 		dp[i-1] + abs (A[i] - A[i-1]),
 		dp[i-2] + abs (A[i] - A[i-2])
