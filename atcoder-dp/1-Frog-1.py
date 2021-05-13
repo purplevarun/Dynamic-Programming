@@ -7,7 +7,7 @@ Minimum cost before frog reaches end of array
 N = int(input())
 A = [int(X) for X in input().split()]
 
-dp = [None for i in range (N)]
+dp = [1e9 for i in range (N)]
 dp[0] = 0
 dp[1] = abs (A[1] - A[0])
 
