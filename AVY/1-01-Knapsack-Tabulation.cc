@@ -28,9 +28,13 @@ int KnapSack (int W, int *wt, int *val, int N){
     return dp[N][W];
 }
 int32_t main () {
-    int W = 50;
-    int wt[] = {10,20,30};
-    int val[] = {60,100,120};
-    int N = 3;
+    // int W = 50;
+    // int wt[] = {10,20,30};
+    // int val[] = {60,100,120};
+    // int N = 3;
+    int N, W; cin >> N >> W;
+    int wt[N], val[N];
+    for (int i=0;i<N;i++)
+        cin >> wt[i] >> val[i];
     cout << KnapSack(W,wt,val,N) << endl;
 }
