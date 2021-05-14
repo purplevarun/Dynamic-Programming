@@ -9,4 +9,7 @@ for i in range (N):
         dp[i][2] = C
         continue
 
-    
+    dp[i][0] = A + max (dp[i-1][1], dp[i-1][2]) 
+    dp[i][1] = B + max (dp[i-1][0], dp[i-1][2]) 
+    dp[i][2] = C + max (dp[i-1][0], dp[i-1][1])
+
