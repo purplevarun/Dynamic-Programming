@@ -1,3 +1,4 @@
+# https://atcoder.jp/contests/dp/tasks/dp_b
 N, K = [int(X) for X in input().split()]
 A = [int(X) for X in input().split()]
 dp = [1e9 for i in range (N)]

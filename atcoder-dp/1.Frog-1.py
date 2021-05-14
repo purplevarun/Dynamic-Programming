@@ -1,3 +1,4 @@
+# https://atcoder.jp/contests/dp/tasks/dp_a
 N = int (input())
 A = [int(X) for X in input().split()]
 

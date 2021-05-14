@@ -1,5 +1,6 @@
+# https://atcoder.jp/contests/dp/tasks/dp_c
 N = int (input())
-dp = [[None for i range (3)] for j in range (N)]
+dp = [[None for i in range (3)] for j in range (N)]
 for i in range (N):
     A, B, C = [int (X) for X in input().split()]
     # base case 
@@ -12,4 +13,5 @@ for i in range (N):
     dp[i][0] = A + max (dp[i-1][1], dp[i-1][2]) 
     dp[i][1] = B + max (dp[i-1][0], dp[i-1][2]) 
     dp[i][2] = C + max (dp[i-1][0], dp[i-1][1])
-
+    
+print (max (dp[-1]))
