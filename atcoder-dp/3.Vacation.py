@@ -9,4 +9,4 @@ for i in range (N):
     if val == A[i] : act = 'A'
     elif val == B[i] : act = 'B'
     else : act = 'C'
-
+    
