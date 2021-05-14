@@ -4,6 +4,8 @@
 using namespace std;
 /*
 	Minimum cost required to reach end of array using 1 or 2 jumps
+
+	Concept : Linear DP
 */
 int recursion (int* A, int N, int i = 0, unordered_map <int,int> dp = {}){
 	if (i == N-1){
