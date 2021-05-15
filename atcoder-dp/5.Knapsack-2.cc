@@ -24,6 +24,23 @@ int32_t main () {
 		dp[i][0] = 0;
 		for (int j=1;j<V+1;j++){
 			
+			dp[i][j] = dp[i-1][j];
+
+			if (val[i] <= j)
+				dp[i][j] = min (
+					dp[i][j],
+					wt[i] + dp[i-1][j-val[i]]
+				);
+			//cout << dp[i][j] << ' ';
+		}
+		//cout << endl;
+	}
+	int answer;
+	for (int v = V; v>=0; v--){
+		if (dp[N-1][v] <= W){
+			answer = v;
+			break;
 		}
 	}
+	cout << answer << endl;
 }
