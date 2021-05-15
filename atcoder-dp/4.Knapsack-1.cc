@@ -8,11 +8,11 @@
 //#include <stack>
 //#include <queue>
 using namespace std;
-#define int int64_t
 #define all(x) x.begin(), x.end()
 #define vi vector<int>
 #define null nullptr
 #define endl '\n'
+#define int int64_t
 
 void onigiri () {
 	int N, W;
@@ -28,9 +28,9 @@ void onigiri () {
 				dp[i][j] = 0;
 			}	
 			else if (wt[i-1] <= j){
-				dp[i][j] = min (
+				dp[i][j] = max (
 					dp[i-1][j],
-					dp[i-1][j-wt[i-1]] + val[i-1]
+					dp[i-1][j-wt[i-1]] + val[i]
 				);
 			}
 			else {
