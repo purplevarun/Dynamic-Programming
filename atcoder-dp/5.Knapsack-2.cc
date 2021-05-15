@@ -1,3 +1,4 @@
+// https://atcoder.jp/contests/dp/tasks/dp_e
 #include <iostream>
 using namespace std;
 #define int long long int
@@ -20,7 +21,7 @@ int32_t main () {
 	dp[0][0] = 0;
 	dp[0][val[0]] = wt[0];
 	
-	for (int i=1;i<N+1;i++) {
+	for (int i=1;i<N;i++) {
 		dp[i][0] = 0;
 		for (int j=1;j<V+1;j++){
 			
