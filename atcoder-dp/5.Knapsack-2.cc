@@ -8,13 +8,11 @@ int32_t main () {
 	for (int i=0;i<N;i++){
 		cin >> wt[i] >> val[i];
 	}
-	int dp[N+1][W+1];
+	int dp[100+7][1000+7];
 
-	for (int i=0;i<N+1;i++){
-		for (int j=0;j<W+1;j++){
-			if (i == 0 || j == 0){
-				dp[i][j] = 0;
-			}	
+	for (int i=0;i<100+7;i++){
+		for (int j=0;j<1000+7;j++){
+			dp[i][j] = 0;
 		}
 	}
 	for (int i=1;i<N+1;i++){
