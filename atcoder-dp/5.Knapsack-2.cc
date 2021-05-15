@@ -32,9 +32,8 @@ int32_t main () {
 					dp[i][j],
 					wt[i] + dp[i-1][j-val[i]]
 				);
-			//cout << dp[i][j] << ' ';
+			
 		}
-		//cout << endl;
 	}
 	int answer;
 	for (int v = V; v>=0; v--){
