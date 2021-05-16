@@ -1,4 +1,7 @@
-def LCS (A, B):
+# https://practice.geeksforgeeks.org/problems/longest-repeating-subsequence2004/1
+# longest repeating subsequence
+def LRS (A):
+	B = A.copy()
 	N = len (A)
 	M = len (B)
 	dp = [
@@ -10,7 +13,7 @@ def LCS (A, B):
 
 	for i in range (1, N+1):
 		for j in range (1, M+1):
-			if A[i-1] == B[j-1]:
+			if A[i-1] == B[j-1] and i != j:
 				dp[i][j] = dp[i-1][j-1] + 1
 			else :
 				dp[i][j] = max (
@@ -19,3 +22,5 @@ def LCS (A, B):
 				)
 
 	return dp[N][M]
+
+print (LRS("AABEBCDD"))
