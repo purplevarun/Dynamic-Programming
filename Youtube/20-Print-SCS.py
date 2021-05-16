@@ -9,7 +9,7 @@ def LCS (A, B):
 				dp[i][j] = dp[i-1][j-1] + 1
 			else :
 				dp[i][j] = max (dp[i-1][j], dp[i][j-1])
-	# till here is basic LCS 
+	# till here i s basic LCS 
 def SCS (A, B):
 	return LCS(A,B)
 if __name__ == '__main__':
