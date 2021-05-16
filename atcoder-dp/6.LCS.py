@@ -18,6 +18,8 @@ def LCS(A,B):
 					dp[i-1][j],
 					dp[i][j-1]
 				)
+	# up until here is normal LCS, now we need to print it
+
 	ans = ""
 	i = N; j = M
 	while i > 0 and j > 0:
