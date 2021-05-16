@@ -1,7 +1,7 @@
 # https://practice.geeksforgeeks.org/problems/longest-repeating-subsequence2004/1
 # longest repeating subsequence
 def LRS (A):
-	B = A.copy()
+	B = f"{A}"
 	N = len (A)
 	M = len (B)
 	dp = [
