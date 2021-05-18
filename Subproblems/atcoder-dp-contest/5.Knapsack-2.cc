@@ -5,9 +5,7 @@ using namespace std;
 #define int int64_t
 // W = 1e9
 int Knapsack2(int *wt, int *val, int N, int W){
-	int V = 0LL;
-	for (int i=0;i<N;i++)
-		V += val[i];
+	int V = accumulate(val,val+N,0);
 	int dp[N+1][V+1];
 	for (int i=0;i<N+1;i++){
 		for (int j=0;j<V+1;j++){
@@ -40,7 +38,7 @@ int Knapsack2(int *wt, int *val, int N, int W){
 }
 signed main () {
 	ios_base::sync_with_stdio(false);
-	cin.tie(nullptr);cout.tie(nullptr);
+	cin.tie(nullptr);
 
 	int N, W; cin >> N >> W;
 	int wt[N], val[N];
