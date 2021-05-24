@@ -1,7 +1,8 @@
 <h1>Dp Problems</h1>
 <h2>Final List</h2>
 <ol>
-<li>Down Right Grid</li>
+<li>Grid</li>
+<li>Grid with Obstacles</li>
 <li>Frog Jumping 1</li>
 <li>Ugly Numbers</li>
 <li>
