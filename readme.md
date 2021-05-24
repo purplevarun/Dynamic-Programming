@@ -17,6 +17,7 @@
 <li>Rod Cutting Problem</li>
 <li>Coin Change 1</li>
 <li>Coin Change 2</li>
+<li>Coin Heads > Tails</li>
 <li>
 	<strong>
 	Longest Common Subsequence - [PARENT PROBLEM]
