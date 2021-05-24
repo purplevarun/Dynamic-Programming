@@ -3,7 +3,7 @@
 <ol>
 <li>Grid</li>
 <li>Grid with Obstacles</li>
-<li>Frog Jumping 1</li>
+<li>Frog Jumping</li>
 <li>Ugly Numbers</li>
 <li>
 	<strong>
