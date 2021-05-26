@@ -1,7 +1,6 @@
 // https://atcoder.jp/contests/dp/tasks/dp_d
 // https://www.hackerrank.com/contests/srin-aadc03/challenges/classic-01-knapsack/problem
 // https://practice.geeksforgeeks.org/problems/0-1-knapsack-problem0945/1
-// https://www.spoj.com/problems/LKS/
 #include <iostream>
 using namespace std;
 #define int int64_t
