@@ -30,12 +30,11 @@ int knapsack(int *wt, int *val, int N, int W){
 int32_t main () {
 	ios_base::sync_with_stdio(false);
 	cin.tie(nullptr);
-	// int N = 3, W = 8;
-	// int wt[] = {3,4,5};
-	// int val[] = {30,50,60};
-	int N, W; cin >> N >> W;
-	int wt[N], val[N];
-	for (int i=0;i<N;i++) cin >> wt[i] >> val[i];
+
+	int N = 3, W = 8;
+	int wt[] = {3,4,5};
+	int val[] = {30,50,60};
+	
 	cout << knapsack(wt, val, N, W) << '\n';
 	// expected answer = 90
 }
