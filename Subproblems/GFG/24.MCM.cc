@@ -21,6 +21,5 @@ using namespace std;
 signed main () {
 	ios_base::sync_with_stdio (0);cin.tie (0);
 	int N = 5;
-	int A[N] = {40, 20, 30, 10, 30};
-	
+	int A[N] = {40, 20, 30, 10, 30};	
 }
