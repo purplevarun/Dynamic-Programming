@@ -80,13 +80,10 @@ int32_t main () {
 	#ifdef varun_debug
 		auto begin = std::chrono::high_resolution_clock::now();
 	#endif
-	int testcase = 1;
-	cin >> testcase;
+	int testcase = 5;
+	//cin >> testcase;
 	for (int tc=1;tc<=testcase;tc++){
 		kotatsu();
-		#ifdef varun_debug 
-			cout << "--------------------------" << endl;
-		#endif
 	}
 	#ifdef varun_debug
 		auto end = std::chrono::high_resolution_clock::now();
