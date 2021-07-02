@@ -1,4 +1,4 @@
-/* https://practice.geeksforgeeks.org/problems/egg-dropping-puzzle-1587115620/1 */
+//https://practice.geeksforgeeks.org/problems/egg-dropping-puzzle-1587115620/1
 #include <bits/stdc++.h>
 using namespace std;
 #define int int64_t
